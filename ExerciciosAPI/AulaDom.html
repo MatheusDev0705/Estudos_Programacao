@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+
+    <h1 style="text-align: center;" id= "texto">Hello world</h1>
+    <div style="text-align: center;"> 
+        <button  onclick="mudarTexto()">CLICA AQUI</button> 
+    
+    
+    </div>
+    
+    
+
+    <script>
+        let estado = true
+
+        function mudarTexto(){
+            if (estado){
+                document.getElementById("texto").innerText = "Olá Mundo!";
+                document.getElementById("texto").style.color = "red"
+            } else {
+                document.getElementById("texto").innerText = "Hello World"
+                document.getElementById("texto").style.color = "blue"
+            }
+            estado = !estado
+        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo API</title>
+</head>
+<body style="background-color: black;">
+<h1 style="text-align: center; color: blue;">Consultar cep</h1>
+ <form>
+<input type="text" id="cep" placeholder="Digite seu cep">
+<button type ="button" onclick="buscacep()">Buscar</button>
+
+<input type="text" id="rua">
+<input type="text" id="bairro">
+<input type="text" id="cidade">
+<input type="text" id="estado">
+
+ </form>
+    <script>
+        function buscacep(){
+            const cep = document.getElementById("cep").value
+
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+            .then(Response => Response.json())
+            .then(dados => {
+                document.getElementById("rua").value = dados.logradouro
+                document.getElementById("bairro").value = dados.bairro
+                document.getElementById("cidade").value = dados.localidade
+                document.getElementById("estado").value = dados.estado
+    
+            })
+        }
+    </script>
+    
+</body>
+</html>

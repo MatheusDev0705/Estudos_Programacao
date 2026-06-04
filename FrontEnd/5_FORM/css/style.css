@@ -1,0 +1,29 @@
+body {
+    padding-bottom: 500px;
+    padding: 10px;
+}
+div {
+    margin-bottom: 10px;
+}
+div input, 
+div label {
+    display: block;
+}
+fieldset, input {
+    border: 3px s;
+    border-radius: 10px;
+}
+.radio label,
+.radio input,
+.radio span {
+    display: inline-block;
+}
+.teste {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: green;
+}

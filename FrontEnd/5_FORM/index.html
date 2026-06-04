@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- !PRIMEIRO Formulario -->
+     <!-- !Atributos do Formulario -->
+    <h2>Formularios HTML</h2>
+    <form>
+        <div>
+        <label>Nome:</label>
+        <input type="text" />
+        </div>
+        <!-- ! Atributos name -->
+         <div>
+        <!-- !Atributo label -->
+            <label for="age">Idade:</label>
+            <input type="text" name="age" />
+         </div>
+         
+          <!-- !selecet -->
+           <div>
+            <label for="job">Selecione sua profissao</label>
+            <select name="job">
+                <option value="backend">Backend</option>
+                <option value="frontend">Frontend</option>
+                <option value="dados">Dados</option>
+                <option value="tester/QA">QA</option>
+            </select>
+           </div>
+           <!-- ! atributo selected -->
+            <div>
+                <label for="contract">Você leu os termos do contrato?</label>
+                <select name="contract" id="">
+                    <option value="sim">Sim</option>
+                    <option value="nao" selected>Não</option>
+                </select>
+            </div>
+            <!-- !multiplas opções -->
+             <div>
+                <label for="items">Selecione os itens desejados</label>
+                <select name="items" multiple>
+                    <option value="pera">pera</option>
+                    <option value="feijao">Feijão</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="milho">Milho</option>
+                </select>
+             </div>
+             <!-- ! textarea -->
+              <div>
+                <label for="comment">Escreva abaixo oque você achou do post:</label>
+                <textarea name="comment"></textarea>
+              </div>
+              <!-- !fieldset e legend -->
+               <div>
+                <fieldset>
+                    <legend>Preencha as suas informações</legend>
+                    <label for="firstname">Nome:</label>
+                    <input type="text" name="firstname">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" name="lastname">
+                </fieldset>
+               </div>
+               <!-- !datalist -->
+                <div>
+                    <label for="flavor">Escolhar o sabor:</label>
+                    <input type="text" list="flavors" name ="flavor">
+
+                    <datalist id="flavors">
+                        <option value="Cereja"></option>
+                        <option value="Morango"></option>
+                        <option value="Abacaxi"></option>
+                        <option value="Chocolate"></option>
+
+                    </datalist>
+                </div>
+                <!-- !senha -->
+                 <div>
+                    <label for="password">Digite a sua senha</label>
+                    <input type="password" name="password">
+                 </div>
+                 <!-- !radio button -->
+                  <div>
+                    <label for="car_model">Escolha o modelo</label>
+                    <div class="radio">
+                        <input type="radio" value="bmw" name="car_model">
+                        <label for="bmw">BMW</label>
+                    </div>
+                    <div>
+                    <label for="car_model">Escolha o modelo</label>
+                    <div class="radio">
+                        <input type="radio" value="renault" name="car_model">
+                        <label for="renault">Renault</label>
+                    </div>
+                    <div>
+                    <label for="car_model">Escolha o modelo</label>
+                    <div class="radio">
+                        <input type="radio" value="ferrari" name="car_model">
+                        <label for="ferrari">Ferrari</label>
+                    </div>
+                  </div>
+                  <!-- !Checkbox -->
+                   <div>
+                    <label for="optionals">Opcionais</label>
+                    <div class="radio">
+                        <input type="checkbox" name="optionals[]" value="big_tires">
+                        <label for="big_tires">Pneus Grandes</label>
+                    </div>
+                   </div>
+                   <div>
+                    <label for="optionals">Opcionais</label>
+                    <div class="radio">
+                        <input type="checkbox" name="optionals[]" value="turbo_engine">
+                        <label for="turbo_engine">Moto Turbo</label>
+                    </div>
+                   </div>
+                   <div>
+                    <label for="optionals">Opcionais</label>
+                    <div class="radio">
+                        <input type="checkbox" name="optionals[]" value="hybrid">
+                        <label for="hybrid">Híbrido</label>
+                    </div>
+                   </div>
+                   <!-- !datas -->
+                    <div>
+                        <label for="birthday">Data de nascimento:</label>
+                        <input type="date" name="birthday"> 
+                    </div>
+                    <!-- ! Arquivos -->
+                     <div>
+                        <label for="imagem">Insira sua imagem:</label>
+                        <input type="file" name="imagem">
+                     </div>
+                     <!-- !numeros -->
+                      <div>
+                        <label for="numero">Quanto você recebe no seu emprego atual?</label>
+                        <input type="number" name="numero">
+                      </div>
+                      <!-- !emails -->
+                       <div>
+                        <label for="email">Digite o seu e-email:</label>
+                        <input type="email" name="email">
+                       </div>
+                       <!-- !value -->
+                        <div>
+                            <label for="value">Digite algum valor:</label>
+                            <input type="text" value="o meu valor é este" name="value">
+                        </div>
+                        <!-- !disabled -->
+                         <div>
+                            <p>Tente mudar o valor</p>
+                            <input type="text" value="Não precisa Preencher" disabled>
+                         </div>
+                         <!-- !placeholder -->
+                          <div>
+                            <label for="currentjob">Digite sua profissao</label>
+                            <input type="text" name="currentjob" placeholder="Programador">
+                          </div>
+                 <!-- !resetar form -->
+                  <input type="reset" value="Limpar">
+               <!-- !envio de form -->
+          <input type="submit" value="Enviar" />
+    </form>
+    <div class="teste">
+        <h4>Isso é um teste</h4>
+        </div>
+        <div>
+            <label for="nome">Digite seu Nome</label>
+        <input type="text" name="nome"/>
+        
+    </div>
+</body>
+</html>
